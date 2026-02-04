@@ -186,3 +186,19 @@ nav a {
   padding: 20px;
 }
 
+
+
+.about {
+  max-width: 800px;
+  margin: 80px auto;
+  background: #111;
+  padding: 40px;
+  border-radius: 20px;
+  box-shadow: 0 0 30px rgba(0,0,0,0.6);
+}
+
+.about h2 {
+  color: #1d9bf0;
+  margin-bottom: 15px;
+}
+
