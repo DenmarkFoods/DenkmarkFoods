@@ -264,3 +264,27 @@ nav a {
   align-items: center;
   padding: 60px;
 }
+
+<section class="hero">
+  <div class="hero-box">
+    <h2>Supplying Quality Food Across the North East</h2>
+    <p>Fresh, frozen and dry goods delivered to restaurants, takeaways and catering businesses you can rely on.</p>
+    <a href="products.html" class="hero-btn">View Our Products</a>
+  </div>
+</section>
+
+@media (max-width: 768px) {
+  .hero {
+    padding: 20px;
+  }
+
+  .hero-box {
+    padding: 25px;
+  }
+
+  .hero-box h2 {
+    font-size: 24px;
+  }
+}
+
+
