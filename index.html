@@ -2,176 +2,51 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<title>DenmarkFoods | Catering Ingredients Supplier</title>
+<title>DenmarkFoods | Catering Supplier</title>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
 <style>
-body {
-  margin: 0;
-  font-family: Arial, sans-serif;
-  background: #f8f8f8;
-  color: #333;
-}
-
-header {
-  background: #0b3d2e;
-  color: white;
-  padding: 15px 30px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-nav a {
-  color: white;
-  margin-left: 15px;
-  text-decoration: none;
-  font-weight: bold;
-}
-
-.hero {
-  background: url('https://images.unsplash.com/photo-1544025162-d76694265947') center/cover no-repeat;
-  color: white;
-  padding: 100px 20px;
-  text-align: center;
-}
-
-section {
-  padding: 50px 20px;
-  max-width: 1100px;
-  margin: auto;
-}
-
-h2 {
-  text-align: center;
-  margin-bottom: 30px;
-}
-
-.products {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 20px;
-}
-
-.card {
-  background: white;
-  padding: 20px;
-  border-radius: 10px;
-  box-shadow: 0 0 10px rgba(0,0,0,0.1);
-}
-
-.card h3 {
-  color: #0b3d2e;
-}
-
-form {
-  background: white;
-  padding: 30px;
-  border-radius: 10px;
-  max-width: 600px;
-  margin: auto;
-  box-shadow: 0 0 10px rgba(0,0,0,0.1);
-}
-
-input, textarea {
-  width: 100%;
-  padding: 10px;
-  margin-bottom: 15px;
-}
-
-button {
-  background: #0b3d2e;
-  color: white;
-  padding: 12px;
-  border: none;
-  width: 100%;
-  font-size: 16px;
-  cursor: pointer;
-}
-
-footer {
-  background: #0b3d2e;
-  color: white;
-  text-align: center;
-  padding: 20px;
-}
+body{margin:0;font-family:Poppins,sans-serif;background:#f4f6f8}
+header{background:#0b3d2e;color:white;padding:15px 40px;display:flex;justify-content:space-between}
+nav a{color:white;margin-left:20px;text-decoration:none;font-weight:500}
+.hero{background:linear-gradient(rgba(0,0,0,.5),rgba(0,0,0,.5)),url('https://images.unsplash.com/photo-1544025162-d76694265947') center/cover no-repeat;color:white;padding:140px 20px;text-align:center}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:25px;padding:60px;max-width:1200px;margin:auto}
+.card{background:white;border-radius:15px;overflow:hidden;box-shadow:0 8px 20px rgba(0,0,0,.1);transition:.3s}
+.card:hover{transform:translateY(-5px)}
+.card img{width:100%;height:180px;object-fit:cover}
+.card a{display:block;padding:20px;text-decoration:none;color:#0b3d2e;font-weight:600;font-size:18px}
+footer{background:#0b3d2e;color:white;text-align:center;padding:20px}
 </style>
 </head>
-
 <body>
 
 <header>
-  <h1>DenmarkFoods</h1>
-  <nav>
-    <a href="#home">Home</a>
-    <a href="#products">Products</a>
-    <a href="#order">Order</a>
-    <a href="#contact">Contact</a>
-  </nav>
+<h1>DenmarkFoods</h1>
+<nav>
+<a href="index.html">Home</a>
+<a href="order.html">Order</a>
+<a href="contact.html">Contact</a>
+</nav>
 </header>
 
-<div class="hero" id="home">
-  <h2>Premium Catering Ingredients</h2>
-  <p>Supplying quality food products to the catering industry</p>
+<div class="hero">
+<h2>Premium Catering Ingredients</h2>
+<p>Trusted supplier to the catering industry</p>
 </div>
 
-<section id="products">
-<h2>Our Products</h2>
-<div class="products">
-
-<div class="card">
-<h3>Fish & Seafood</h3>
-<p>Fish fillets, breaded fish, whole fish, prawns, lobster, crab, scallops, oysters, mussels, smoked and exotic seafood.</p>
+<div class="grid">
+<div class="card"><img src="https://images.unsplash.com/photo-1604908177522-4023f1fbd86c"><a href="fish.html">Fish & Seafood</a></div>
+<div class="card"><img src="https://images.unsplash.com/photo-1604908554027-3c8a4f2f8e91"><a href="meat.html">Meat & Poultry</a></div>
+<div class="card"><img src="https://images.unsplash.com/photo-1605475128023-7f2b6c8c13f2"><a href="desserts.html">Desserts</a></div>
+<div class="card"><img src="https://images.unsplash.com/photo-1506806732259-39c2d0268443"><a href="vegetables.html">Vegetables</a></div>
+<div class="card"><img src="https://images.unsplash.com/photo-1621939514649-280e2ee25f60"><a href="drygoods.html">Dry Goods</a></div>
 </div>
-
-<div class="card">
-<h3>Meat & Poultry</h3>
-<p>Fresh and frozen beef, lamb, pork products, sausages, chicken and duck (breast, diced, sliced and cooked).</p>
-</div>
-
-<div class="card">
-<h3>Speciality Desserts</h3>
-<p>Cakes, pastries, rolls, cheesecakes, mousses and specialty desserts.</p>
-</div>
-
-</div>
-</section>
-
-<section id="order">
-<h2>Place an Order</h2>
-<form onsubmit="sendOrder(event)">
-<input type="text" id="name" placeholder="Your Name" required>
-<input type="email" id="email" placeholder="Your Email" required>
-<textarea id="orderDetails" rows="6" placeholder="Enter the products and quantities you wish to order" required></textarea>
-<button type="submit">Send Order</button>
-</form>
-</section>
-
-<section id="contact">
-<h2>Contact Us</h2>
-<p style="text-align:center;">
-Email: <b>richard@denmarkfoods.co.uk</b><br>
-Phone: 01234 567890<br>
-Location: United Kingdom
-</p>
-</section>
 
 <footer>
-<p>&copy; 2026 DenmarkFoods. All rights reserved.</p>
+<p>&copy; 2026 DenmarkFoods</p>
 </footer>
-
-<script>
-function sendOrder(event) {
-  event.preventDefault();
-
-  let name = document.getElementById("name").value;
-  let email = document.getElementById("email").value;
-  let order = document.getElementById("orderDetails").value;
-
-  let mailtoLink = `mailto:richard@denmarkfoods.co.uk?subject=New Order from ${name}&body=Customer Email: ${email}%0D%0A%0D%0AOrder Details:%0D%0A${order}`;
-
-  window.location.href = mailtoLink;
-}
-</script>
 
 </body>
 </html>
+
+
