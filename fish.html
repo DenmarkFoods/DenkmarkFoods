@@ -1,33 +1,25 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-<meta charset="UTF-8">
-<title>Fish & Seafood | DenmarkFoods</title>
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+<title>Fish & Seafood</title>
 <style>
-body{margin:0;font-family:'Poppins',sans-serif;background:#f4f6f8;color:#333}
-header{background:#0b3d2e;color:white;padding:15px 40px}
+body{font-family:Poppins,sans-serif;background:#f4f6f8;margin:0}
+header{background:#0b3d2e;color:white;padding:15px}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:20px;padding:40px}
+.card{background:white;border-radius:12px;overflow:hidden;box-shadow:0 6px 15px rgba(0,0,0,.1)}
+.card img{width:100%;height:160px;object-fit:cover}
+.card p{padding:15px}
 a{color:white;text-decoration:none}
-section{padding:60px 20px;max-width:1100px;margin:auto}
-ul{list-style:none;padding:0}
-li{background:white;margin-bottom:15px;padding:20px;border-radius:12px;box-shadow:0 6px 12px rgba(0,0,0,.08)}
 </style>
 </head>
 <body>
 <header><a href="index.html">← Back</a></header>
-<section>
-<h2>Fish & Seafood</h2>
-<ul>
-<li>Fresh Fish Fillets</li>
-<li>Breaded Fillets & Goujons</li>
-<li>Whole Fish</li>
-<li>Smoked Fish Products</li>
-<li>King Prawns</li>
-<li>Scampi</li>
-<li>Crab & Lobster</li>
-<li>Clams, Mussels & Oysters</li>
-</ul>
-</section>
+<div class="grid">
+<div class="card"><img src="https://images.unsplash.com/photo-1544943910-4c1dc44aab44"><p>Fish Fillets</p></div>
+<div class="card"><img src="https://images.unsplash.com/photo-1562967916-eb82221dfb36"><p>Breaded Fillets & Goujons</p></div>
+<div class="card"><img src="https://images.unsplash.com/photo-1617196034796-73c87f0fdd05"><p>Whole Fish</p></div>
+<div class="card"><img src="https://images.unsplash.com/photo-1601315486227-71c9be2fa3c8"><p>Prawns & Scampi</p></div>
+<div class="card"><img src="https://images.unsplash.com/photo-1604908554176-243f3c4d6c9c"><p>Crab & Lobster</p></div>
+</div>
 </body>
 </html>
