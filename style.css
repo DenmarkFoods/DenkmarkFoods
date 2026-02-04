@@ -467,3 +467,18 @@ media (max-width: 768px) {
   background: radial-gradient(circle at top left, #0b3a63, #020814 70%);
 }
 
+
+.hero-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 40px;
+}
+
+.hero-image img {
+  max-width: 500px;
+  border-radius: 20px;
+  box-shadow: 0 15px 40px rgba(0,0,0,0.5);
+}
+
+
