@@ -376,6 +376,63 @@ nav a {
 }
 
 
+media (max-width: 768px) {
 
+  /* HEADER FIX */
+  .site-header {
+    padding: 10px;
+  }
+
+  .header-inner {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .nav-links {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .nav-links a {
+    margin: 6px 10px;
+    font-size: 14px;
+  }
+
+  .header-btn {
+    padding: 8px 16px;
+    font-size: 14px;
+  }
+
+  .logo img {
+    height: 26px;
+  }
+
+  /* HERO FIX */
+  .hero {
+    padding: 80px 15px 40px;
+  }
+
+  .hero-box {
+    width: 100%;
+    max-width: 340px;
+    padding: 20px;
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  .hero-box h2 {
+    font-size: 26px;
+    line-height: 1.2;
+  }
+
+  .hero-box p {
+    font-size: 14px;
+  }
+
+  .hero-btn {
+    width: 100%;
+    text-align: center;
+  }
+}
 
 
