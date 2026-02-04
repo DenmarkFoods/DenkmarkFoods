@@ -482,3 +482,20 @@ media (max-width: 768px) {
 }
 
 
+.features {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  padding: 60px 20px;
+}
+
+.feature {
+  background: #111;
+  color: white;
+  padding: 25px 35px;
+  border-radius: 15px;
+  font-weight: bold;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.4);
+}
+
+
