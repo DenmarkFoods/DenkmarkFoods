@@ -1,28 +1,23 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-<meta charset="UTF-8">
-<title>Vegetables | DenmarkFoods</title>
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Vegetables</title>
 <style>
-body{margin:0;font-family:Arial,sans-serif;background:#f4f6f8}
+body{font-family:Poppins,sans-serif;background:#f4f6f8;margin:0}
 header{background:#0b3d2e;color:white;padding:15px}
-section{padding:50px;max-width:1000px;margin:auto}
-li{background:white;margin:15px 0;padding:20px;border-radius:12px;box-shadow:0 6px 12px rgba(0,0,0,.1)}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:20px;padding:40px}
+.card{background:white;border-radius:12px;overflow:hidden;box-shadow:0 6px 15px rgba(0,0,0,.1)}
+.card img{width:100%;height:160px;object-fit:cover}
+.card p{padding:15px}
 a{color:white;text-decoration:none}
 </style>
 </head>
 <body>
-<header><a href="index.html">← Back to Home</a></header>
-<section>
-<h2>Vegetables</h2>
-<ul>
-<li>Frozen Vegetables</li>
-<li>Prepared Vegetable Mixes</li>
-<li>Chips & Potato Products</li>
-<li>Onion Products</li>
-<li>Seasoned Vegetables</li>
-</ul>
-</section>
+<header><a href="index.html">← Back</a></header>
+<div class="grid">
+<div class="card"><img src="https://images.unsplash.com/photo-1506806732259-39c2d0268443"><p>Frozen Vegetables</p></div>
+<div class="card"><img src="https://images.unsplash.com/photo-1518843875459-f738682238a6"><p>Prepared Veg Mixes</p></div>
+<div class="card"><img src="https://images.unsplash.com/photo-1604908177522-4023f1fbd86c"><p>Potato Products</p></div>
+</div>
 </body>
 </html>
