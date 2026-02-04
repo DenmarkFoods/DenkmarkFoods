@@ -441,3 +441,12 @@ media (max-width: 768px) {
   box-shadow: 0 0 40px rgba(0, 150, 255, 0.15);
 }
 
+
+.hero {
+  min-height: 80vh;
+  display: flex;
+  align-items: center;
+  padding: 60px;
+  background: radial-gradient(circle at top left, #0b3a63, #020814 70%);
+}
+
