@@ -280,12 +280,24 @@ nav a {
 }
 
 <section class="hero">
-  <div class="hero-box">
-    <h2>Supplying Quality Food Across the North East</h2>
-    <p>Fresh, frozen and dry goods delivered to restaurants, takeaways and catering businesses you can rely on.</p>
-    <a href="products.html" class="hero-btn">View Our Products</a>
+  <div class="hero-inner">
+
+    <div class="hero-text">
+      <h1>Supplying Quality Food Across the North East</h1>
+      <p>
+        Fresh, frozen and dry goods delivered to restaurants,
+        takeaways and catering businesses you can rely on.
+      </p>
+      <a href="products.html" class="hero-btn">View Our Products</a>
+    </div>
+
+    <div class="hero-visual">
+      <img src="food.jpg" alt="Food delivery">
+    </div>
+
   </div>
 </section>
+
 
 
 @media (max-width: 768px) {
@@ -496,6 +508,17 @@ media (max-width: 768px) {
   border-radius: 15px;
   font-weight: bold;
   box-shadow: 0 10px 30px rgba(0,0,0,0.4);
+}
+
+@media (max-width: 900px) {
+  .hero-inner {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+
+  .hero-visual img {
+    margin-top: 30px;
+  }
 }
 
 
