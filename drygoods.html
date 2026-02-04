@@ -1,28 +1,23 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-<meta charset="UTF-8">
-<title>Dry Goods | DenmarkFoods</title>
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Dry Goods</title>
 <style>
-body{margin:0;font-family:Arial,sans-serif;background:#f4f6f8}
+body{font-family:Poppins,sans-serif;background:#f4f6f8;margin:0}
 header{background:#0b3d2e;color:white;padding:15px}
-section{padding:50px;max-width:1000px;margin:auto}
-li{background:white;margin:15px 0;padding:20px;border-radius:12px;box-shadow:0 6px 12px rgba(0,0,0,.1)}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:20px;padding:40px}
+.card{background:white;border-radius:12px;overflow:hidden;box-shadow:0 6px 15px rgba(0,0,0,.1)}
+.card img{width:100%;height:160px;object-fit:cover}
+.card p{padding:15px}
 a{color:white;text-decoration:none}
 </style>
 </head>
 <body>
-<header><a href="index.html">← Back to Home</a></header>
-<section>
-<h2>Dry Goods</h2>
-<ul>
-<li>Seasonings & Spices</li>
-<li>Breadcrumbs & Batters</li>
-<li>Sauces & Marinades</li>
-<li>Coatings & Mixes</li>
-<li>Speciality Ingredients</li>
-</ul>
-</section>
+<header><a href="index.html">← Back</a></header>
+<div class="grid">
+<div class="card"><img src="https://images.unsplash.com/photo-1621939514649-280e2ee25f60"><p>Seasonings</p></div>
+<div class="card"><img src="https://images.unsplash.com/photo-1604908177522-4023f1fbd86c"><p>Sauces & Marinades</p></div>
+<div class="card"><img src="https://images.unsplash.com/photo-1587049352841-9a6e21c0cdb3"><p>Coatings & Mixes</p></div>
+</div>
 </body>
 </html>
