@@ -153,3 +153,36 @@ nav a {
   text-decoration: none;
   font-weight: bold;
 }
+
+
+.products-preview {
+  display: flex;
+  justify-content: center;
+  margin-top: 60px;
+}
+
+.products-card {
+  width: 70%;
+  background: #111;
+  border-radius: 20px;
+  overflow: hidden;
+  text-decoration: none;
+  color: white;
+  box-shadow: 0 0 30px rgba(0,0,0,0.6);
+  transition: transform 0.3s;
+}
+
+.products-card:hover {
+  transform: scale(1.02);
+}
+
+.products-card img {
+  width: 100%;
+  height: 260px;
+  object-fit: cover;
+}
+
+.products-text {
+  padding: 20px;
+}
+
