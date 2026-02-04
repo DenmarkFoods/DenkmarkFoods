@@ -289,3 +289,28 @@ nav a {
 }
 
 
+.logo img {
+  height: 40px;
+  width: auto;
+}
+
+.hero {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 60px 20px;
+}
+
+.hero-box {
+  background: rgba(0, 0, 0, 0.6);
+  padding: 25px;
+  border-radius: 12px;
+  max-width: 500px;
+}
+
+.hero-box h2 {
+  margin-top: 0;
+}
+
+
+
