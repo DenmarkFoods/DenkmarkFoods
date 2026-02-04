@@ -581,5 +581,91 @@ media (max-width: 768px) {
 
 food.jpg
 
+.hero {
+  padding: 80px 5%;
+}
+
+.hero-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 50px;
+}
+
+.hero-text {
+  max-width: 550px;
+}
+
+.hero-text h1 {
+  font-size: 48px;
+  margin-bottom: 20px;
+}
+
+.hero-text p {
+  font-size: 18px;
+  color: #ccc;
+}
+
+.hero-btn {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 14px 28px;
+  background: linear-gradient(135deg,#6a5cff,#3fa9ff);
+  color: white;
+  border-radius: 30px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.hero-image {
+  border-radius: 20px;
+  padding: 10px;
+  background: linear-gradient(135deg,#6a5cff,#3fa9ff);
+}
+
+.hero-image img {
+  width: 420px;
+  border-radius: 16px;
+  display: block;
+}
+
+/* Feature boxes */
+.hero-features {
+  display: flex;
+  gap: 15px;
+  margin-top: 25px;
+}
+
+.feature-box {
+  background: rgba(255,255,255,0.05);
+  padding: 12px 18px;
+  border-radius: 12px;
+  font-size: 14px;
+  border: 1px solid rgba(255,255,255,0.1);
+}
+
+/* MOBILE FIX */
+@media (max-width: 768px) {
+  .hero-content {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .hero-image img {
+    width: 100%;
+    max-width: 320px;
+  }
+
+  .hero-features {
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .hero-text h1 {
+    font-size: 32px;
+  }
+}
+
+
 
 
