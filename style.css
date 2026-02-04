@@ -2,17 +2,17 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Segoe UI", sans-serif;
+  font-family: Arial, sans-serif;
 }
 
 body {
-  background: #f4f7fb;
+  background: #f4f6f9;
   color: #222;
 }
 
 /* HEADER */
-header {
-  background: linear-gradient(90deg, #0a2a66, #0f4db8);
+.site-header {
+  background: #0b3c5d;
   color: white;
   padding: 20px 40px;
   display: flex;
@@ -20,62 +20,64 @@ header {
   align-items: center;
 }
 
-header h1 {
-  font-size: 26px;
+.logo h1 {
+  font-size: 28px;
+  color: white;
+}
+
+.logo p {
+  font-size: 14px;
+  color: #cfd8dc;
 }
 
 nav a {
-  color: white;
-  text-decoration: none;
   margin-left: 20px;
-  font-weight: 600;
-}
-
-nav a:hover {
-  text-decoration: underline;
-}
-
-.contact-btn {
-  background: white;
-  color: #0f4db8;
-  padding: 8px 18px;
-  border-radius: 20px;
+  text-decoration: none;
+  color: white;
   font-weight: bold;
 }
 
+.contact-btn {
+  background: #c62828;
+  padding: 8px 16px;
+  border-radius: 5px;
+}
+
 /* GRID */
+.container {
+  padding: 40px;
+}
+
 .grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   gap: 25px;
-  padding: 40px;
 }
 
 /* CARDS */
 .card {
   background: white;
-  border-radius: 14px;
+  border-radius: 12px;
   overflow: hidden;
-  box-shadow: 0 10px 20px rgba(0,0,0,0.08);
   text-decoration: none;
   color: black;
-  transition: transform 0.25s, box-shadow 0.25s;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+  transition: transform 0.2s ease;
 }
 
 .card:hover {
-  transform: translateY(-6px);
-  box-shadow: 0 16px 30px rgba(0,0,0,0.15);
+  transform: translateY(-5px);
 }
 
 .card img {
   width: 100%;
-  height: 160px;
+  height: 180px;
   object-fit: cover;
 }
 
 .card h3 {
-  padding: 15px;
-  font-size: 18px;
+  padding: 15px 15px 5px;
+  color: #0b3c5d;
 }
 
 .card p {
@@ -83,43 +85,14 @@ nav a:hover {
   color: #555;
 }
 
-/* PAGE TITLES */
-.page-title {
-  padding: 30px 40px 0;
-  font-size: 26px;
-  color: #0a2a66;
-}
-
-
-
-/* MOBILE DESIGN */
-@media (max-width: 768px) {
-
-  header {
+/* MOBILE */
+@media (max-width: 700px) {
+  .site-header {
     flex-direction: column;
     text-align: center;
-    gap: 12px;
   }
 
   nav {
-    display: flex;
-    gap: 15px;
+    margin-top: 10px;
   }
-
-  .grid {
-    padding: 20px;
-    gap: 15px;
-  }
-
-  .card img {
-    height: 140px;
-  }
-
-  .page-title {
-    padding: 20px;
-    font-size: 22px;
-    text-align: center;
-  }
-
 }
-
