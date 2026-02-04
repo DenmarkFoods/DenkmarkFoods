@@ -266,12 +266,7 @@ nav a {
 }
 
 
-body {
-  margin: 0;
-  font-family: Arial, sans-serif;
-  background: radial-gradient(circle at top, #0b1f33, #000);
-  color: white;
-}
+
 
 /* HEADER */
 header {
