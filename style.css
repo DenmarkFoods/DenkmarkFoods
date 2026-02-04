@@ -312,5 +312,48 @@ nav a {
   margin-top: 0;
 }
 
+.site-header {
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.header-inner {
+  width: 100%;
+  max-width: 1200px;
+  background: linear-gradient(135deg, #0b1d33, #102a44);
+  border-radius: 50px;
+  padding: 14px 30px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  box-shadow: 0 10px 40px rgba(0,0,0,0.5);
+}
+
+.logo img {
+  height: 40px;
+}
+
+.nav-links a {
+  color: white;
+  text-decoration: none;
+  margin: 0 15px;
+  font-weight: 600;
+}
+
+.nav-links a:hover {
+  color: #4fc3ff;
+}
+
+.header-btn {
+  background: linear-gradient(90deg, #7b5cff, #4fc3ff);
+  padding: 10px 22px;
+  border-radius: 30px;
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+
 
 
