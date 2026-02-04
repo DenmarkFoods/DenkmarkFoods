@@ -89,3 +89,37 @@ nav a:hover {
   font-size: 26px;
   color: #0a2a66;
 }
+
+
+
+/* MOBILE DESIGN */
+@media (max-width: 768px) {
+
+  header {
+    flex-direction: column;
+    text-align: center;
+    gap: 12px;
+  }
+
+  nav {
+    display: flex;
+    gap: 15px;
+  }
+
+  .grid {
+    padding: 20px;
+    gap: 15px;
+  }
+
+  .card img {
+    height: 140px;
+  }
+
+  .page-title {
+    padding: 20px;
+    font-size: 22px;
+    text-align: center;
+  }
+
+}
+
