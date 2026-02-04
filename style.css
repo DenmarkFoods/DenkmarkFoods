@@ -1,9 +1,10 @@
 body {
   margin: 0;
   font-family: Arial, sans-serif;
-  background: #0e0e0e;
-  color: #ffffff;
+  background: radial-gradient(circle at top, #0b1c2d, #000);
+  color: white;
 }
+
 
 /* HEADER */
 .site-header {
