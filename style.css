@@ -1,98 +1,81 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: Arial, sans-serif;
-}
-
 body {
-  background: #f4f6f9;
-  color: #222;
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #0e0e0e;
+  color: #ffffff;
 }
 
 /* HEADER */
 .site-header {
-  background: #0b3c5d;
+  background: linear-gradient(90deg, #0a2540, #0f4c81);
   color: white;
-  padding: 20px 40px;
+  padding: 15px 30px;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
-.logo h1 {
-  font-size: 28px;
+.site-header h1 {
+  margin: 0;
+}
+
+.site-header nav a {
   color: white;
-}
-
-.logo p {
-  font-size: 14px;
-  color: #cfd8dc;
-}
-
-nav a {
   margin-left: 20px;
   text-decoration: none;
-  color: white;
   font-weight: bold;
 }
 
-.contact-btn {
-  background: #c62828;
-  padding: 8px 16px;
-  border-radius: 5px;
-}
-
-/* GRID */
-.container {
-  padding: 40px;
-}
-
+/* CARD */
 .grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 25px;
+  display: flex;
+  justify-content: center;
+  margin: 40px;
 }
 
-/* CARDS */
 .card {
-  background: white;
+  background: #1a1a1a;
   border-radius: 12px;
   overflow: hidden;
+  width: 90%;
+  max-width: 900px;
   text-decoration: none;
-  color: black;
-  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
-  transition: transform 0.2s ease;
+  color: white;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.6);
+  transition: transform 0.3s ease;
 }
 
 .card:hover {
-  transform: translateY(-5px);
+  transform: scale(1.02);
 }
 
 .card img {
   width: 100%;
-  height: 180px;
+  height: 300px;
   object-fit: cover;
 }
 
 .card h3 {
-  padding: 15px 15px 5px;
-  color: #0b3c5d;
+  padding: 15px;
+  margin: 0;
 }
 
 .card p {
-  padding: 0 15px 15px;
-  color: #555;
+  padding: 0 15px 20px;
+  color: #ccc;
 }
 
-/* MOBILE */
-@media (max-width: 700px) {
-  .site-header {
-    flex-direction: column;
-    text-align: center;
-  }
+/* ABOUT SECTION */
+.about {
+  max-width: 900px;
+  margin: 60px auto;
+  padding: 40px;
+  background: #1a1a1a;
+  border-radius: 12px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.6);
+}
 
-  nav {
-    margin-top: 10px;
-  }
+.about h2 {
+  margin-top: 0;
+  color: #4db8ff;
 }
