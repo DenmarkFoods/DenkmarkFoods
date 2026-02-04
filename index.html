@@ -9,12 +9,27 @@
 body{margin:0;font-family:Poppins,sans-serif;background:#f4f6f8}
 header{background:#0b3d2e;color:white;padding:15px 40px;display:flex;justify-content:space-between}
 nav a{color:white;margin-left:20px;text-decoration:none;font-weight:500}
-.hero{background:linear-gradient(rgba(0,0,0,.5),rgba(0,0,0,.5)),url('https://images.unsplash.com/photo-1544025162-d76694265947') center/cover no-repeat;color:white;padding:140px 20px;text-align:center}
+.hero{background:linear-gradient(rgba(0,0,0,.5),rgba(0,0,0,.5)),url('https://images.pexels.com/photos/1640777/pexels-photo-1640777.jpeg') center/cover no-repeat;color:white;padding:140px 20px;text-align:center}
+
 .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:25px;padding:60px;max-width:1200px;margin:auto}
-.card{background:white;border-radius:15px;overflow:hidden;box-shadow:0 8px 20px rgba(0,0,0,.1);transition:.3s}
-.card:hover{transform:translateY(-5px)}
+
+.card{
+display:block;
+background:white;
+border-radius:15px;
+overflow:hidden;
+box-shadow:0 8px 20px rgba(0,0,0,.1);
+transition:.3s;
+text-decoration:none;
+color:#0b3d2e;
+}
+
+.card:hover{transform:translateY(-6px)}
+
 .card img{width:100%;height:180px;object-fit:cover}
-.card a{display:block;padding:20px;text-decoration:none;color:#0b3d2e;font-weight:600;font-size:18px}
+
+.card h3{padding:20px;margin:0;font-size:20px}
+
 footer{background:#0b3d2e;color:white;text-align:center;padding:20px}
 </style>
 </head>
@@ -35,11 +50,30 @@ footer{background:#0b3d2e;color:white;text-align:center;padding:20px}
 </div>
 
 <div class="grid">
-<div class="card"><img src="https://images.unsplash.com/photo-1604908177522-4023f1fbd86c"><a href="fish.html">Fish & Seafood</a></div>
-<div class="card"><img src="https://images.unsplash.com/photo-1604908554027-3c8a4f2f8e91"><a href="meat.html">Meat & Poultry</a></div>
-<div class="card"><img src="https://images.unsplash.com/photo-1605475128023-7f2b6c8c13f2"><a href="desserts.html">Desserts</a></div>
-<div class="card"><img src="https://images.unsplash.com/photo-1506806732259-39c2d0268443"><a href="vegetables.html">Vegetables</a></div>
-<div class="card"><img src="https://images.unsplash.com/photo-1621939514649-280e2ee25f60"><a href="drygoods.html">Dry Goods</a></div>
+<a class="card" href="fish.html">
+<img src="https://images.pexels.com/photos/821365/pexels-photo-821365.jpeg">
+<h3>Fish & Seafood</h3>
+</a>
+
+<a class="card" href="meat.html">
+<img src="https://images.pexels.com/photos/65175/pexels-photo-65175.jpeg">
+<h3>Meat & Poultry</h3>
+</a>
+
+<a class="card" href="desserts.html">
+<img src="https://images.pexels.com/photos/3026808/pexels-photo-3026808.jpeg">
+<h3>Desserts</h3>
+</a>
+
+<a class="card" href="vegetables.html">
+<img src="https://images.pexels.com/photos/1435907/pexels-photo-1435907.jpeg">
+<h3>Vegetables</h3>
+</a>
+
+<a class="card" href="drygoods.html">
+<img src="https://images.pexels.com/photos/4199098/pexels-photo-4199098.jpeg">
+<h3>Dry Goods</h3>
+</a>
 </div>
 
 <footer>
@@ -48,5 +82,3 @@ footer{background:#0b3d2e;color:white;text-align:center;padding:20px}
 
 </body>
 </html>
-
-
