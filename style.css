@@ -116,15 +116,12 @@ nav a {
 
 
 .hero {
-  position: relative;
-  min-height: 70vh;
-  background-size: cover;
-  background-position: center;
+  min-height: 80vh;
   display: flex;
   align-items: center;
   padding: 60px;
+  background: radial-gradient(circle at top left, #0b3a63, #020814 70%);
 }
-
 
 
 .hero-text {
@@ -435,4 +432,12 @@ media (max-width: 768px) {
   }
 }
 
+
+.hero-box {
+  max-width: 520px;
+  background: rgba(0, 0, 0, 0.65);
+  padding: 40px;
+  border-radius: 18px;
+  box-shadow: 0 0 40px rgba(0, 150, 255, 0.15);
+}
 
