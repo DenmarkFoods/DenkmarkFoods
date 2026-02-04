@@ -6,6 +6,39 @@ body {
 }
 
 
+.site-header {
+  background: linear-gradient(90deg, #002a4d, #005fa3);
+  padding: 20px 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo h1 {
+  margin: 0;
+  font-size: 26px;
+}
+
+.logo span {
+  font-size: 12px;
+  opacity: 0.8;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  margin-left: 20px;
+  font-weight: bold;
+}
+
+.nav-contact {
+  background: #e63946;
+  padding: 8px 14px;
+  border-radius: 20px;
+}
+
+
+
 /* HEADER */
 .site-header {
   background: linear-gradient(90deg, #0a2540, #0f4c81);
