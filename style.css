@@ -1122,3 +1122,72 @@ html, body {
   }
 }
 
+
+/* =========================
+   GLOBAL MOBILE FIX
+========================= */
+
+@media (max-width: 768px) {
+
+  html, body {
+    width: 100%;
+    overflow-x: hidden;
+  }
+
+  * {
+    box-sizing: border-box;
+  }
+
+  section, div {
+    max-width: 100%;
+  }
+
+  /* NAV */
+  nav {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  nav ul {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  /* FEATURES (3 boxes under View Products) */
+  .features {
+    flex-direction: column !important;
+    align-items: center;
+  }
+
+  .feature {
+    width: 100% !important;
+    max-width: 350px;
+  }
+
+  /* PRODUCT GRIDS */
+  .grid,
+  .product-grid,
+  .products,
+  .cards {
+    grid-template-columns: 1fr !important;
+    display: grid !important;
+  }
+
+  /* ALL CARDS */
+  .card {
+    width: 100%;
+  }
+
+  /* TEXT SIZE FIX */
+  h1 { font-size: 1.8rem; }
+  h2 { font-size: 1.4rem; }
+  p  { font-size: 1rem; }
+
+  /* IMAGES */
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+
+}
+
