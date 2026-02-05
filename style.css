@@ -368,9 +368,6 @@ nav a {
   padding: 60px;
 }
 
-<section class="hero">
-  <div class="hero-inner">
-
     <div class="hero-text">
       <h1>Supplying Quality Food Across the North East</h1>
       <p>
@@ -1190,4 +1187,112 @@ html, body {
   }
 
 }
+
+
+/* ==================================
+   FINAL GLOBAL MOBILE OVERRIDE
+   (PASTE AT VERY BOTTOM)
+================================== */
+
+@media (max-width: 768px) {
+
+  /* STOP SIDE SCROLL + ZOOM */
+  html, body {
+    width: 100%;
+    overflow-x: hidden;
+  }
+
+  * {
+    box-sizing: border-box;
+    max-width: 100%;
+  }
+
+  /* HEADER */
+  .site-header,
+  .header-inner {
+    flex-direction: column !important;
+    text-align: center;
+    gap: 10px;
+  }
+
+  nav,
+  .nav-links {
+    flex-direction: column !important;
+    gap: 12px;
+  }
+
+  /* HERO */
+  .hero,
+  .hero-inner,
+  .hero-content {
+    flex-direction: column !important;
+    grid-template-columns: 1fr !important;
+    padding: 20px !important;
+    text-align: center;
+  }
+
+  .hero-text h1 {
+    font-size: 28px !important;
+  }
+
+  .hero-text p {
+    font-size: 15px !important;
+  }
+
+  .hero-image img {
+    width: 100% !important;
+    max-width: 320px !important;
+    margin: 0 auto;
+  }
+
+  /* FEATURE BOXES (3 under View Products) */
+  .features,
+  .hero-features {
+    flex-direction: column !important;
+    align-items: center;
+  }
+
+  .feature,
+  .feature-box {
+    width: 90% !important;
+    max-width: 320px;
+  }
+
+  /* PRODUCT GRIDS */
+  .grid,
+  .products-grid,
+  .product-grid,
+  .products,
+  .cards {
+    display: grid !important;
+    grid-template-columns: 1fr !important;
+    gap: 15px;
+  }
+
+  /* PRODUCT CARDS */
+  .card,
+  .product-card {
+    width: 100% !important;
+  }
+
+  .card img {
+    height: 180px;
+    object-fit: cover;
+  }
+
+  /* TEXT SIZE NORMALISER */
+  h1 { font-size: 1.8rem !important; }
+  h2 { font-size: 1.4rem !important; }
+  h3 { font-size: 1.1rem !important; }
+  p  { font-size: 1rem !important; }
+
+  /* CENTER CONTENT */
+  main,
+  section {
+    padding: 15px !important;
+  }
+
+}
+
+
 
