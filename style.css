@@ -883,3 +883,39 @@ food.jpg
 </section>
 
 
+.hero-media {
+  width: 520px;
+  aspect-ratio: 16 / 10;   /* keeps box and image same shape */
+  padding: 4px;
+  border-radius: 22px;
+  background: linear-gradient(135deg, #ff2a2a, #ff9a3b);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.hero-media img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;     /* THIS fixes the ratio */
+  border-radius: 18px;
+}
+
+/* badges under image */
+.hero-badges {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.hero-badges span {
+  flex: 1;
+  text-align: center;
+  background: rgba(0,0,0,0.35);
+  padding: 10px;
+  border-radius: 10px;
+  font-size: 14px;
+}
+
+
