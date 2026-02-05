@@ -1089,3 +1089,8 @@ food.jpg
 }
 
 
+
+html, body {
+  overflow-x: hidden;
+}
+
