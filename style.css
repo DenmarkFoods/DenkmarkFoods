@@ -460,17 +460,21 @@ nav a {
   color: #4fc3ff;
 }
 
-.header-btn,
-.hero-btn {
-  background: #e53935;   /* solid red */
+.header-btn {
+  background: #ff2e2e;      /* solid red */
   color: white;
-  border: none;
+  padding: 10px 22px;
+  border-radius: 999px;     /* pill shape */
+  text-decoration: none;    /* removes underline */
+  font-weight: 600;
+  font-size: 14px;
+  transition: 0.2s ease;
 }
 
-.header-btn:hover,
-.hero-btn:hover {
-  background: #c62828;   /* darker red on hover */
+.header-btn:hover {
+  background: #ff5555;
 }
+
 
 
 
