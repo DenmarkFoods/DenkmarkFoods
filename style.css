@@ -1094,3 +1094,31 @@ html, body {
   overflow-x: hidden;
 }
 
+
+.features {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+}
+
+/* Each box */
+.feature {
+  background: #111;
+  padding: 20px;
+  border-radius: 16px;
+  text-align: center;
+  min-width: 220px;
+}
+
+/* ✅ MOBILE FIX */
+@media (max-width: 768px) {
+  .features {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .feature {
+    width: 90%;
+  }
+}
+
